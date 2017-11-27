@@ -1,0 +1,5 @@
+{
+  "title": "Temperature (C) in Central Greenland",
+  "raw_data": "data/raw/gisp2_temp_accum_alley2000.txt",
+  "final_data": "data/final/alley.csv"
+}
