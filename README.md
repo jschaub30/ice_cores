@@ -5,11 +5,11 @@ changes from ice core data.
 
 The code uses Docker to:
 - download the [raw data][raw] from NOAA
-- [tidy the data](web/data/tidy.sh) using a shell script
+- clean/tidy the data using a [shell script](web/data/tidy.sh) 
 - chart the data using the [Dygraphs](https://dygraphs.com/) javascript library
 
 The result is an interactive chart, but here's a screenshot of the result:
-![screenshot][img/screenshot.png]
+![screenshot](img/screenshot.png)
 
 The initial dataset charts the temperature derived from the Greenland Ice Sheet
 Project Two ("GISP2"). See [this description][description].
