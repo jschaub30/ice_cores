@@ -1,5 +1,15 @@
 # ice_cores
-Charting temperature changes from ice core data.
+I was stunned when I discovered how "stable" the temperature has been for the past 10k
+years compared to prior years.  This repo creates a simple page that charts temperature
+changes from ice core data.
+
+The code uses Docker to:
+- download the [raw data][raw] from NOAA
+- [tidy the data](web/data/tidy.sh) using a shell script
+- chart the data using the [Dygraphs](https://dygraphs.com/) javascript library
+
+The result is an interactive chart, but here's a screenshot of the result:
+![screenshot][img/screenshot.png]
 
 The initial dataset charts the temperature derived from the Greenland Ice Sheet
 Project Two ("GISP2"). See [this description][description].
