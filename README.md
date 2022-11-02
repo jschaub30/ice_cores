@@ -1,5 +1,5 @@
 # ice_cores
-I was stunned when I discovered how "stable" the temperature has been for the past 10k
+I was surprised when I discovered how stable the temperature was for the past 10k
 years compared to prior years.  This repo creates a simple page that charts temperature
 changes from ice core data.
 
@@ -25,7 +25,7 @@ git clone https://github.com/jschaub30/ice_cores.git
 cd ice_cores
 make term
 ```
-Now open [http://localhost:5000](http://localhost:5000) in your browser.
+Now open [http://localhost:5001](http://localhost:5001) in your browser.
 
 ### Sources
 - [raw data][raw]

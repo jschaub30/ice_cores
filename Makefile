@@ -18,14 +18,14 @@ build:
 	docker build -t ice-cores .
 
 term: down build
-	docker run --rm -it -p 5000:5000 --name ice-cores ice-cores
+	docker run --rm -it -p 5001:5000 --name ice-cores ice-cores
 
 up: down build
-	docker run --rm -d -p 5000:5000 --name ice-cores ice-cores
+	docker run --rm -d -p 5001:5000 --name ice-cores ice-cores
 
 down:
 	-docker stop -t1 ice-cores
 
 test: up
 	sleep 1 && \
-		curl http://localhost:5000
+		curl http://localhost:5001
