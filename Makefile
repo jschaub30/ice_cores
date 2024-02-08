@@ -30,3 +30,6 @@ down:
 test: up
 	sleep 1 && \
 		curl http://localhost:5001
+deploy:
+	cp -r web /var/www/jeremyschaub.us/demos/ice-cores/
+	cp -r web /var/www/jeremyschaub.us/staging/demos/ice-cores/
