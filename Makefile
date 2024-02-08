@@ -20,8 +20,9 @@ build:
 term: down build
 	docker run --rm -it -p 5001:5000 --name ice-cores ice-cores
 
-up: down build
+serve: down build
 	docker run --rm -d -p 5001:5000 --name ice-cores ice-cores
+	echo "Ready at http://localhost:5001"
 
 down:
 	-docker stop -t1 ice-cores
